@@ -14,7 +14,9 @@ app.use(express.static("public"));
 main().catch((err) => console.log(err));
 
 async function main() {
-    await mongoose.connect("mongodb://0.0.0.0:27017/todolistDB");
+    await mongoose.connect(
+        "mongodb+srv://admin-An:10-72001184qw@cluster0.onpudap.mongodb.net/todolistDB"
+    );
     console.log("Server connect");
 }
 
